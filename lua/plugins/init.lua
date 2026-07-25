@@ -1,4 +1,5 @@
 return {
+  -- nvim formatter
   {
     "stevearc/conform.nvim",
     -- event = 'BufWritePre', -- uncomment for format on save
@@ -13,9 +14,10 @@ return {
     end,
   },
 
-  -- test new blink
+  -- test new blink / autocomplete nvChad built-in
   { import = "nvchad.blink.lazyspec" },
 
+  -- nvim tree sitter / color coding
   {
     "nvim-treesitter/nvim-treesitter",
       opts = {
@@ -30,6 +32,7 @@ return {
     },
   },
 
+  -- tree explorer inside neovim called with :Neotree
   {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",

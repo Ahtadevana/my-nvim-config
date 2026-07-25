@@ -1,4 +1,5 @@
 return {
+  -- debug adapter for neovim
   {
     lazy = false,
     "mfussenegger/nvim-dap",
@@ -8,6 +9,7 @@ return {
     end,
   },
 
+  -- debugger ui to make it easier to navigate
   {
     lazy = false,
     "rcarriga/nvim-dap-ui",

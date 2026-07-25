@@ -3,6 +3,7 @@ local dapui = require("dapui")
 
 dapui.setup()
 
+-- leader du for toggling debugger ui
 vim.keymap.set("n", "<Leader>du", dapui.toggle, {
   desc = "DAP UI: Toggle",
 })

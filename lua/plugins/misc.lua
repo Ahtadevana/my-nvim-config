@@ -1,4 +1,5 @@
 return {
+  -- transparent background to use terminal's
   {
     "xiyaowong/transparent.nvim",
 
@@ -19,6 +20,7 @@ return {
     on_clear = function() end,
   },
 
+  -- discord rich presence
   {
     "vyfor/cord.nvim",
 

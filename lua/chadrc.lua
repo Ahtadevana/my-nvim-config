@@ -5,6 +5,7 @@
 ---@type ChadrcConfig
 local M = {}
 
+-- default nvChad colorscheme
 M.base46 = {
 	theme = "catppuccin",
 

@@ -1,9 +1,11 @@
 require("nvchad.configs.lspconfig").defaults()
 
+-- lsp servers
 local servers = {
   "html",
   "cssls",
-  "clangd"
+  "clangd",
+  "marksman"
 }
 vim.lsp.enable(servers)
 

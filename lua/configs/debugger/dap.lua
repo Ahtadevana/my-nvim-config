@@ -1,5 +1,6 @@
 local dap = require("dap")
 
+-- using lldb for debugging
 dap.adapters.lldb = {
   type = "executable",
   command = "/usr/bin/lldb-dap",
