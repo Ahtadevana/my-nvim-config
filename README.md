@@ -12,20 +12,21 @@ Current plugins i've installed are:
 
 - Main:
 
-[X] DAP | mfusseneger's Neovim Debug Adapter
-[X] DAP UI | rcarriga's DAP Interface
-[X] Conform | stevearc's Formatter (NvChad built-in)
-[X] Lsp-config | Lsp config for Neovim  (NvChad built-in)
-[X] Blink Auto complete (NvChad built-in)
-[X] Tree-sitter | Color coding made simple for each languages (NvChad built-in)
-[X] Neo-tree | File Tree Explorer
-[+] Mason installer, Which-key nvim, Telescope nvim
+- [X] DAP | mfusseneger's Neovim Debug Adapter
+- [X] DAP UI | rcarriga's DAP Interface
+- [X] Conform | stevearc's Formatter (NvChad built-in)
+- [X] Lsp-config | Lsp config for Neovim  (NvChad built-in)
+- [X] Blink Auto complete (NvChad built-in)
+- [X] Tree-sitter | Color coding made simple for each languages (NvChad built-in)
+- [X] Neo-tree | File Tree Explorer
+
+Extras: Mason installer, Which-key nvim, Telescope nvim
  
 - Optional:
 
-[ ] Transparent | xiayowong's transparent Neovim background
-[ ] Cord | vyfor's Neovim Discord Rich Presence
-[ ] Smear Cursor | sphamba'smear cursor look in Neovim
+- [ ] Transparent | xiayowong's transparent Neovim background
+- [ ] Cord | vyfor's Neovim Discord Rich Presence
+- [ ] Smear Cursor | sphamba'smear cursor look in Neovim
 
 ## Directory Tree
 ```
