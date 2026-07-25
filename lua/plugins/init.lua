@@ -17,6 +17,8 @@ return {
   -- test new blink / autocomplete nvChad built-in
   { import = "nvchad.blink.lazyspec" },
 
+--[[
+
   -- nvim tree sitter / color coding
   {
     "nvim-treesitter/nvim-treesitter",
@@ -31,6 +33,8 @@ return {
       },
     },
   },
+
+]]
 
   -- tree explorer inside neovim called with :Neotree
   {
