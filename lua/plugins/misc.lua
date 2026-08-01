@@ -43,7 +43,7 @@ return {
         details = function(opts)
           return 'Taking a break from ' .. opts.workspace
         end,
-        state = 'Be right back',
+        state = 'Be right back, bro',
         tooltip = '😴',
       },
 
