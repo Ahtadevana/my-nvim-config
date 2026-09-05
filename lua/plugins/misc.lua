@@ -5,11 +5,31 @@ return {
 
     lazy = false,
     groups = {
-      'Normal', 'NormalNC', 'Comment', 'Constant', 'Special', 'Identifier',
-      'Statement', 'PreProc', 'Type', 'Underlined', 'Todo', 'String', 'Function',
-      'Conditional', 'Repeat', 'Operator', 'Structure', 'LineNr', 'NonText',
-      'SignColumn', 'CursorLine', 'CursorLineNr', 'StatusLine', 'StatusLineNC',
-      'EndOfBuffer',
+      "Normal",
+      "NormalNC",
+      "Comment",
+      "Constant",
+      "Special",
+      "Identifier",
+      "Statement",
+      "PreProc",
+      "Type",
+      "Underlined",
+      "Todo",
+      "String",
+      "Function",
+      "Conditional",
+      "Repeat",
+      "Operator",
+      "Structure",
+      "LineNr",
+      "NonText",
+      "SignColumn",
+      "CursorLine",
+      "CursorLineNr",
+      "StatusLine",
+      "StatusLineNC",
+      "EndOfBuffer",
     },
     -- table: additional groups that should be cleared
     extra_groups = {},
@@ -24,11 +44,11 @@ return {
   {
     "vyfor/cord.nvim",
 
-    lazy = false;
+    lazy = false,
     opts = {
       display = {
-        theme = "atom",   -- 'default', 'atom', 'catppuccin', 'minecraft', 'void', 'classic'
-        flavor = "dark",   -- 'dark', 'light', 'accent'
+        theme = "atom", -- 'default', 'atom', 'catppuccin', 'minecraft', 'void', 'classic'
+        flavor = "dark", -- 'dark', 'light', 'accent'
         view = "asset",
       },
 
@@ -36,15 +56,15 @@ return {
         editing = function(opts)
           return string.format("Editing %s: [%d:%d]", opts.filename, opts.cursor_line, opts.cursor_char)
         end,
-        workspace = "in kitty";
+        workspace = "in Konsole",
       },
 
       idle = {
         details = function(opts)
-          return 'Taking a break from ' .. opts.workspace
+          return "Taking a break from " .. opts.workspace
         end,
-        state = 'Be right back, bro',
-        tooltip = '😴',
+        state = "Be right back, bro",
+        tooltip = "😴",
       },
 
       advanced = {
@@ -54,29 +74,6 @@ return {
           },
         },
       },
-
-  },
-},
-
-  {
-    "sphamba/smear-cursor.nvim",
-
-    lazy = false,
-    opts = {
-      smear_between_buffers = true,
-      smear_between_neighbor_lines = true,
-      scroll_buffer_space = true,
-      legacy_computing_symbols_support = false,
-      smear_insert_mode = true,
-
-
-      stiffness = 0.8,                      -- 0.6      [0, 1]
-      trailing_stiffness = 0.6,             -- 0.45     [0, 1]
-      stiffness_insert_mode = 0.9,          -- 0.5      [0, 1]
-      trailing_stiffness_insert_mode = 0.7, -- 0.5      [0, 1]
-      damping = 0.95,                       -- 0.85     [0, 1]
-      damping_insert_mode = 0.95,           -- 0.9      [0, 1]
-      distance_stop_animating = 0.5,        -- 0.1      > 0
     },
   },
 }
