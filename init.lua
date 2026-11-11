@@ -83,3 +83,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, opts)
 	end,
 })
+
+-- visual line on narrowed text
+vim.keymap.set("n", "j", "gj")
+vim.keymap.set("n", "k", "gk")
