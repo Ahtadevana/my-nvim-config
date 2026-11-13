@@ -18,9 +18,6 @@ vim.opt.incsearch = true -- immediate preview
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
--- clear search highlighting
-vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
-
 -- indentation
 vim.opt.autoindent = true
 vim.opt.smartindent = true
@@ -49,6 +46,9 @@ vim.opt.wildmode = "longest:full,full"
 vim.opt.wildoptions = "pum"
 
 -- ================================ KEYMAPS ================================
+-- clear search highlighting
+vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+
 -- telescope - ff, livegrep buffer, help
 local builtin = require("telescope.builtin")
 
