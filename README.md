@@ -1,5 +1,5 @@
 # My NVIM Config
-This config has everything for your basic NeoVim development workflow. It's fast, simple, and have a convenient file structure to add your plugins and configuration. It uses the commonly used, Lazy plugin manager. The config structure shown below:
+This config has everything for your basic NeoVim development workflow. It's fast, simple, and has a convenient file structure to add your own plugins and configuration. It uses the commonly used Lazy plugin manager. Here's the file structure:
 
 ## File Structure
 ```
@@ -30,23 +30,23 @@ This config has everything for your basic NeoVim development workflow. It's fast
 ## Feature
 Features added in this config are:
 ### Main:
-- Basic vim motions configuration/keymaps
-- Autopairs - nvim-autopairs
-- File explorer - oil.nvim
-- Fuzzyfind, buffer management, live grep - telescope.nvim
-- LSP and auto enable - mason.nvim
-- Autocompletion - blink.cmp
-- Inline diagnostics - tiny-inline-diagnostics.nvim
-- Treesitter - nvim-treesitter
-- Auto formatting - Conform.nvim
-- Git integration - Gitsigns
+- Basic vim motions and custom keybindings
+- Automatic bracket and quotation pairing
+- File explorer and filesystem navigation - oil
+- Fuzzyfinder, buffer navigation, and livegrep - telescope
+- LSP setup and automatic server configuration - mason
+- Autocompletion - blinkcmp
+- Inline diagnostics
+- Syntax highlighting - treesitter
+- Auto formatting & save on format - conform
+- Git integration, indicators, hunk management - gitsigns
 - Terminal buffer
 ### Misc:
-- Discord live presence to show off - cord.nvim
-- Pretty status line - lualine.nvim
-- Rendering png support - snacks.nvim
-- Catppuccin color theme - catppuccin
-- Use terminal background - transparent.nvim
+- Discord rich presence - cord
+- Customizable statusline - lualine
+- Image rendering - snacks
+- Catppuccin colorscheme - catppuccin
+- Transparent background
 
 ## Keymaps
 ### Vim Builtin:
@@ -74,7 +74,11 @@ Toggle oil file explorer: -
 ```
 
 ## Maintenance
-Serves as basic Lazy plugin configuration. Add native vim related configuration or keymaps in init.lua. Specific plugin configuration can be added directly in `plugins/` plugin installation, or in the designated `config/` directory.
+This configuration serves as basic Neovim setup managed by Lazy. 
+
+Add native vim related settings and keymaps in init.lua. Specific plugin configuration can be added directly in `plugins/` plugin installation, or in the designated `config/` directory.
 
 ## Notes from da xerv
-Just a small config i like to save from time to time. If you're looking for a simple Neovim environment to code in, feel free to use mine! Support the plugins i've listed above, and thank you for reading. Toodles!
+Just a small config i like to mantain and share from time to time. If you're looking for a simple Neovim environment to code in, feel free to use mine! Consider to support the plugins i've listed above.
+
+Thank you for reading, and Toodles!
