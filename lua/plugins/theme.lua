@@ -55,16 +55,32 @@ return {
 			vim.cmd.colorscheme("ring0dark")
 
 			local yellow = "#ffdd33"
-
 			for _, group in ipairs({
 				"Type",
 				"@type",
 				"@type.builtin",
 				"@type.definition",
+
+				-- preprocessor directives
+				"@keyword.directive",
+				"@keyword.directive.define",
+
+				-- macro identifiers
+				"@constant.macro",
+				"@function.macro",
 			}) do
 				vim.api.nvim_set_hl(0, group, {
 					fg = yellow,
 					bold = true,
+				})
+			end
+
+			local green = "#73c936"
+			for _, group in ipairs({
+				"special",
+			}) do
+				vim.api.nvim_set_hl(0, group, {
+					fg = green,
 				})
 			end
 		end,
