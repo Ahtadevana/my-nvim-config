@@ -87,3 +87,12 @@ vim.api.nvim_create_autocmd("LspAttach", {
 -- visual line on narrowed text
 vim.keymap.set("n", "j", "gj")
 vim.keymap.set("n", "k", "gk")
+
+local syntax = {
+	["@type"] = { fg = "#F5C2E7", bold = true },
+	["@type.builtin"] = { fg = "#F5C2E7", bold = true },
+}
+
+for group, opts in pairs(syntax) do
+	vim.api.nvim_set_hl(0, group, opts)
+end

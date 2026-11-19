@@ -1,4 +1,6 @@
 return {
+	-- catppuccin theme
+	--[[
 	{
 		"catppuccin/nvim",
 		name = "catppuccin",
@@ -40,6 +42,31 @@ return {
 			})
 
 			vim.cmd.colorscheme("catppuccin-mocha")
+		end,
+	},
+    ]]
+	--
+
+	--tsoding theme (tweaked types)
+	{
+		"ring0-rootkit/ring0-dark.nvim",
+		priority = 1000,
+		init = function()
+			vim.cmd.colorscheme("ring0dark")
+
+			local yellow = "#ffdd33"
+
+			for _, group in ipairs({
+				"Type",
+				"@type",
+				"@type.builtin",
+				"@type.definition",
+			}) do
+				vim.api.nvim_set_hl(0, group, {
+					fg = yellow,
+					bold = true,
+				})
+			end
 		end,
 	},
 
