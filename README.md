@@ -45,7 +45,8 @@ Features added in this config are:
 - Discord rich presence - cord
 - Customizable statusline - lualine
 - Image rendering - snacks
-- Catppuccin colorscheme - catppuccin
+- Catppuccin colorscheme - catppuccin, gruber-darker inspired
+- italics (no ligatures)
 - Transparent background
 
 ## Keymaps
