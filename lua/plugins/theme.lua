@@ -1,5 +1,4 @@
 return {
-	-- catppuccin theme
 	--[[
 	{
 		"catppuccin/nvim",
@@ -44,8 +43,6 @@ return {
 			vim.cmd.colorscheme("catppuccin-mocha")
 		end,
 	},
-    ]]
-	--
 
 	--tsoding theme (tweaked types)
 	{
@@ -83,6 +80,19 @@ return {
 					fg = green,
 				})
 			end
+		end,
+	},
+    ]]
+	--
+
+	{
+		"pustota-theme/pustota.nvim",
+		version = "*",
+		dependencies = { "nvim-treesitter/nvim-treesitter" },
+		priority = 1000,
+
+		config = function()
+			vim.cmd.colorscheme("pustota")
 		end,
 	},
 

@@ -6,6 +6,9 @@ vim.g.mapleader = " "
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+-- wrap
+vim.opt.wrap = false
+
 -- persistent undo
 vim.opt.undofile = true
 
